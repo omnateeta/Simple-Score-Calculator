@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cricket Match Score Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional: Link to a CSS file for styling -->
+</head>
+<body>
+    <h1>Cricket Match Score Calculator</h1>
+    <p>Use this tool to calculate the strike rate of a cricket player based on runs scored, balls faced, and wickets lost.</p>
+    
+    <form id="scoreForm">
+        <label for="runs">Runs Scored:</label>
+        <input type="number" id="runs" name="runs" required>
+        <br><br><br>
+        <label for="balls">Balls Faced:</label>
+        <input type="number" id="balls" name="balls" required>
+        <br><br><br>
+        <label for="wickets">Wickets Lost:</label>
+        <input type="number" id="wickets" name="wickets" required>
+        <br><br><br>
+        <button type="button" onclick="calculateStrikeRate()">Calculate Strike Rate</button>
+    </form>
+
+    <section id="results">
+        <h2>Results</h2>
+        <p id="strikeRateResult"></p>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>
